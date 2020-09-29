@@ -1,0 +1,489 @@
+[1601362368.886][INFO]: Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21743
+[1601362368.886][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1601362369.675][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\admin\\Downloads\\DNSTest\\build\\downloads\\1601362367582_9244_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\admin\\Downloads\\DNSTest\\build\\downloads\\1601362367582_9244_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1601362369.679][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\admin\\Downloads\\DNSTest\\build\\downloads\\1601362367582_9244_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1601362369.680][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1601362369.681][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir12716_1048878981" data:,
+[1601362370.631][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1601362372.689][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1601362374.756][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "85.0.4183.121",
+      "chrome": {
+         "chromedriverVersion": "85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689})",
+         "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir12716_1048878981"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:64018"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b41963ea59351680a45a652b6d557c59"
+}
+[1601362374.819][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND MaximizeWindow {
+
+}
+[1601362374.819][INFO]: Waiting for pending navigations...
+[1601362374.822][INFO]: Done waiting for pending navigations. Status: ok
+[1601362374.934][INFO]: Waiting for pending navigations...
+[1601362374.934][INFO]: Done waiting for pending navigations. Status: ok
+[1601362374.935][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE MaximizeWindow {
+   "height": 840,
+   "width": 1552,
+   "x": -8,
+   "y": -8
+}
+[1601362374.939][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1601362374.939][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE SetTimeouts
+[1601362374.947][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND Navigate {
+   "url": "https://www.dns-shop.ru/"
+}
+[1601362374.947][INFO]: Waiting for pending navigations...
+[1601362374.948][INFO]: Done waiting for pending navigations. Status: ok
+[1601362375.358][INFO]: Waiting for pending navigations...
+[1601362376.331][INFO]: Done waiting for pending navigations. Status: ok
+[1601362376.331][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE Navigate
+[1601362376.434][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@class='btn btn-additional']"
+}
+[1601362376.434][INFO]: Waiting for pending navigations...
+[1601362376.468][INFO]: Done waiting for pending navigations. Status: ok
+[1601362376.541][INFO]: Waiting for pending navigations...
+[1601362376.570][INFO]: Done waiting for pending navigations. Status: ok
+[1601362376.570][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "1997449c-2631-4b10-9edb-c0f1377a1339"
+}
+[1601362376.616][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "1997449c-2631-4b10-9edb-c0f1377a1339"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1601362376.616][INFO]: Waiting for pending navigations...
+[1601362376.804][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.171][INFO]: Waiting for pending navigations...
+[1601362377.178][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.178][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE ExecuteScript true
+[1601362377.184][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND ClickElement {
+   "id": "1997449c-2631-4b10-9edb-c0f1377a1339"
+}
+[1601362377.184][INFO]: Waiting for pending navigations...
+[1601362377.191][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.307][INFO]: Waiting for pending navigations...
+[1601362377.377][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.377][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE ClickElement
+[1601362377.385][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/17a8e9b716404e77/bytovaya-texnika/']"
+}
+[1601362377.385][INFO]: Waiting for pending navigations...
+[1601362377.395][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.517][INFO]: Waiting for pending navigations...
+[1601362377.589][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.589][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/17a8e9b716404e77/bytovaya-texnika/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362377.818][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/17a8e9b716404e77/bytovaya-texnika/']"
+}
+[1601362377.818][INFO]: Waiting for pending navigations...
+[1601362377.849][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.932][INFO]: Waiting for pending navigations...
+[1601362377.982][INFO]: Done waiting for pending navigations. Status: ok
+[1601362377.982][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "cc6ead5e-de7a-45c1-bd08-22d604b5ab63"
+}
+[1601362377.993][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 100,
+         "origin": {
+            "ELEMENT": "cc6ead5e-de7a-45c1-bd08-22d604b5ab63",
+            "element-6066-11e4-a52e-4f735466cecf": "cc6ead5e-de7a-45c1-bd08-22d604b5ab63"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      } ],
+      "id": "default mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   } ]
+}
+[1601362377.993][INFO]: Waiting for pending navigations...
+[1601362377.998][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.155][INFO]: Waiting for pending navigations...
+[1601362378.156][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.156][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE PerformActions
+[1601362378.160][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/093d2768390b7fd7/xolodilnoe-oborudovanie/']"
+}
+[1601362378.160][INFO]: Waiting for pending navigations...
+[1601362378.161][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.174][INFO]: Waiting for pending navigations...
+[1601362378.175][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.175][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/093d2768390b7fd7/xolodilnoe-oborudovanie/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362378.391][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/093d2768390b7fd7/xolodilnoe-oborudovanie/']"
+}
+[1601362378.391][INFO]: Waiting for pending navigations...
+[1601362378.392][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.398][INFO]: Waiting for pending navigations...
+[1601362378.399][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.399][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "c224211b-d0fa-4c0c-a581-66a5753cecdb"
+}
+[1601362378.405][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 100,
+         "origin": {
+            "ELEMENT": "c224211b-d0fa-4c0c-a581-66a5753cecdb",
+            "element-6066-11e4-a52e-4f735466cecf": "c224211b-d0fa-4c0c-a581-66a5753cecdb"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      } ],
+      "id": "default mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   } ]
+}
+[1601362378.405][INFO]: Waiting for pending navigations...
+[1601362378.406][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.545][INFO]: Waiting for pending navigations...
+[1601362378.547][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.547][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE PerformActions
+[1601362378.551][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362378.551][INFO]: Waiting for pending navigations...
+[1601362378.553][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.565][INFO]: Waiting for pending navigations...
+[1601362378.566][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.566][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362378.782][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362378.782][INFO]: Waiting for pending navigations...
+[1601362378.783][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.789][INFO]: Waiting for pending navigations...
+[1601362378.790][INFO]: Done waiting for pending navigations. Status: ok
+[1601362378.790][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362378.998][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362378.999][INFO]: Waiting for pending navigations...
+[1601362378.999][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.006][INFO]: Waiting for pending navigations...
+[1601362379.006][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.006][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362379.216][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362379.216][INFO]: Waiting for pending navigations...
+[1601362379.217][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.223][INFO]: Waiting for pending navigations...
+[1601362379.224][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.224][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362379.434][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362379.434][INFO]: Waiting for pending navigations...
+[1601362379.435][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.441][INFO]: Waiting for pending navigations...
+[1601362379.442][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.442][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362379.655][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362379.655][INFO]: Waiting for pending navigations...
+[1601362379.673][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.717][INFO]: Waiting for pending navigations...
+[1601362379.718][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.718][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362379.936][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362379.936][INFO]: Waiting for pending navigations...
+[1601362379.937][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.943][INFO]: Waiting for pending navigations...
+[1601362379.962][INFO]: Done waiting for pending navigations. Status: ok
+[1601362379.962][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362380.186][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362380.186][INFO]: Waiting for pending navigations...
+[1601362380.187][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.193][INFO]: Waiting for pending navigations...
+[1601362380.194][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.194][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362380.419][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362380.419][INFO]: Waiting for pending navigations...
+[1601362380.420][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.425][INFO]: Waiting for pending navigations...
+[1601362380.426][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.426][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362380.638][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362380.638][INFO]: Waiting for pending navigations...
+[1601362380.640][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.651][INFO]: Waiting for pending navigations...
+[1601362380.652][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.653][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362380.869][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362380.869][INFO]: Waiting for pending navigations...
+[1601362380.870][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.876][INFO]: Waiting for pending navigations...
+[1601362380.877][INFO]: Done waiting for pending navigations. Status: ok
+[1601362380.877][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362381.085][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362381.085][INFO]: Waiting for pending navigations...
+[1601362381.086][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.091][INFO]: Waiting for pending navigations...
+[1601362381.092][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.092][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362381.301][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362381.302][INFO]: Waiting for pending navigations...
+[1601362381.302][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.308][INFO]: Waiting for pending navigations...
+[1601362381.309][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.309][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362381.520][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362381.520][INFO]: Waiting for pending navigations...
+[1601362381.521][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.526][INFO]: Waiting for pending navigations...
+[1601362381.527][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.527][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362381.739][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362381.739][INFO]: Waiting for pending navigations...
+[1601362381.740][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.745][INFO]: Waiting for pending navigations...
+[1601362381.746][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.746][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362381.960][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362381.960][INFO]: Waiting for pending navigations...
+[1601362381.961][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.971][INFO]: Waiting for pending navigations...
+[1601362381.973][INFO]: Done waiting for pending navigations. Status: ok
+[1601362381.973][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362382.192][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362382.192][INFO]: Waiting for pending navigations...
+[1601362382.193][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.200][INFO]: Waiting for pending navigations...
+[1601362382.200][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.200][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362382.412][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"
+}
+[1601362382.412][INFO]: Waiting for pending navigations...
+[1601362382.413][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.423][INFO]: Waiting for pending navigations...
+[1601362382.424][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.424][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/catalog/4e2a7cdb390b7fd7/xolodilniki/']"}
+  (Session info: chrome=85.0.4183.121)
+[1601362382.646][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1601362382.646][INFO]: Waiting for pending navigations...
+[1601362382.647][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.666][INFO]: Waiting for pending navigations...
+[1601362382.667][INFO]: Done waiting for pending navigations. Status: ok
+[1601362382.667][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE ExecuteScript "\u003Chtml lang=\"ru\">\u003Chead>\n\t\u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t\u003Cmeta charset=\"UTF-8\">\n\t\u003Cmeta name=\"csrf-param\" content=\"_csrf\">\n\u003Cmeta name=\"csrf-token\" content=\"qZw2fqDv8fjt6udX7g0W..."
+[1601362382.755][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND Screenshot {
+
+}
+[1601362382.755][INFO]: Waiting for pending navigations...
+[1601362382.756][INFO]: Done waiting for pending navigations. Status: ok
+[1601362383.121][INFO]: Waiting for pending navigations...
+[1601362383.122][INFO]: Done waiting for pending navigations. Status: ok
+[1601362383.122][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4AAAAOvCAYAAAAtF9k2AAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xt0FFW+N/zvroSkwdy4xoRICGoEgQS5jiBR5lGMo4mvijMOgrocQeaMoJ4Dx+d1GBBkXM8sOc8omTNeGDkiypkjyhwDjlx8D04QlIvRBFCISggGQkIinQvQC..."
+[1601362383.206][INFO]: [b41963ea59351680a45a652b6d557c59] COMMAND Quit {
+
+}
+[1601362383.239][INFO]: [b41963ea59351680a45a652b6d557c59] RESPONSE Quit

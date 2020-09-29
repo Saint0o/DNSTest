@@ -1,0 +1,272 @@
+[1601291456.634][INFO]: Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 47869
+[1601291456.634][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1601291457.172][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\admin\\Downloads\\com.dnstest.test.DNSTest\\build\\downloads\\1601291455907_9144_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\admin\\Downloads\\com.dnstest.test.DNSTest\\build\\downloads\\1601291455907_9144_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1601291457.242][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\admin\\Downloads\\com.dnstest.test.DNSTest\\build\\downloads\\1601291455907_9144_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1601291457.242][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1601291457.243][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir4244_1052464059" data:,
+[1601291457.918][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1601291459.962][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1601291462.024][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "85.0.4183.121",
+      "chrome": {
+         "chromedriverVersion": "85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689})",
+         "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir4244_1052464059"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:63416"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "4ca425410053ef3c2fca2a8af0143ffc"
+}
+[1601291462.058][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1601291462.058][INFO]: Waiting for pending navigations...
+[1601291462.060][INFO]: Done waiting for pending navigations. Status: ok
+[1601291462.175][INFO]: Waiting for pending navigations...
+[1601291462.176][INFO]: Done waiting for pending navigations. Status: ok
+[1601291462.176][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE SetWindowRect {
+   "height": 770,
+   "width": 1368,
+   "x": 8,
+   "y": 8
+}
+[1601291462.180][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1601291462.180][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE SetTimeouts
+[1601291462.186][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND Navigate {
+   "url": "https://www.dns-shop.ru/"
+}
+[1601291462.186][INFO]: Waiting for pending navigations...
+[1601291462.187][INFO]: Done waiting for pending navigations. Status: ok
+[1601291462.562][INFO]: Waiting for pending navigations...
+[1601291463.322][INFO]: Done waiting for pending navigations. Status: ok
+[1601291463.322][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE Navigate
+[1601291463.420][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"
+}
+[1601291463.421][INFO]: Waiting for pending navigations...
+[1601291463.449][INFO]: Done waiting for pending navigations. Status: ok
+[1601291463.488][INFO]: Waiting for pending navigations...
+[1601291463.500][INFO]: Done waiting for pending navigations. Status: ok
+[1601291463.500][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"}
+  (Session info: chrome=85.0.4183.121)
+[1601291463.734][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"
+}
+[1601291463.734][INFO]: Waiting for pending navigations...
+[1601291463.831][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.258][INFO]: Waiting for pending navigations...
+[1601291464.287][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.287][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"}
+  (Session info: chrome=85.0.4183.121)
+[1601291464.504][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"
+}
+[1601291464.648][INFO]: Waiting for pending navigations...
+[1601291464.883][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.902][INFO]: Waiting for pending navigations...
+[1601291464.912][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.912][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+}
+[1601291464.936][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1601291464.936][INFO]: Waiting for pending navigations...
+[1601291464.937][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.948][INFO]: Waiting for pending navigations...
+[1601291464.949][INFO]: Done waiting for pending navigations. Status: ok
+[1601291464.949][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE ExecuteScript true
+[1601291464.959][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND ClickElement {
+   "id": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+}
+[1601291464.959][INFO]: Waiting for pending navigations...
+[1601291464.967][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.012][INFO]: Waiting for pending navigations...
+[1601291466.013][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.013][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE ClickElement ERROR element click intercepted: Element <a class="ui-link menu-desktop__root-title" href="/catalog/17a8e9b716404e77/bytovaya-texnika/">...</a> is not clickable at point (208, 147). Other element would receive the click: <div class="dropdown-city" data-role="dropdown-city">...</div>
+  (Session info: chrome=85.0.4183.121)
+[1601291466.219][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/div[1]/div/div[1]/div[1]/a"
+}
+[1601291466.219][INFO]: Waiting for pending navigations...
+[1601291466.220][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.225][INFO]: Waiting for pending navigations...
+[1601291466.225][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.225][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+}
+[1601291466.232][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1601291466.232][INFO]: Waiting for pending navigations...
+[1601291466.233][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.240][INFO]: Waiting for pending navigations...
+[1601291466.241][INFO]: Done waiting for pending navigations. Status: ok
+[1601291466.241][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE ExecuteScript true
+[1601291466.244][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND ClickElement {
+   "id": "df1bb994-8d4d-43e4-91d4-6428605f6370"
+}
+[1601291466.244][INFO]: Waiting for pending navigations...
+[1601291466.245][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.274][INFO]: Waiting for pending navigations...
+[1601291467.275][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.275][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE ClickElement ERROR element click intercepted: Element <a class="ui-link menu-desktop__root-title" href="/catalog/17a8e9b716404e77/bytovaya-texnika/">...</a> is not clickable at point (208, 147). Other element would receive the click: <div class="dropdown-city" data-role="dropdown-city">...</div>
+  (Session info: chrome=85.0.4183.121)
+[1601291467.492][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1601291467.493][INFO]: Waiting for pending navigations...
+[1601291467.493][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.510][INFO]: Waiting for pending navigations...
+[1601291467.511][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.511][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE ExecuteScript "\u003Chtml lang=\"ru\">\u003Chead>\n\t\u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t\u003Cmeta charset=\"UTF-8\">\n\t\u003Cmeta name=\"csrf-param\" content=\"_csrf\">\n\u003Cmeta name=\"csrf-token\" content=\"gL401YLKaQsHf61LNwuR..."
+[1601291467.566][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND Screenshot {
+
+}
+[1601291467.566][INFO]: Waiting for pending navigations...
+[1601291467.567][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.917][INFO]: Waiting for pending navigations...
+[1601291467.918][INFO]: Done waiting for pending navigations. Status: ok
+[1601291467.918][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABpoAAANVCAYAAABoHC2oAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3X1YFOe9P/73LMguyiIIQngwikmMDxgMElIfSjVNDXnA/GLit4mN0ctUY8/3aOz3mOb8Wo9GY3Paq55fEzmnSbTxhNjY9nhCmzVGNPlWyxETFVESNGqiKxFYQ..."
+[1601291468.002][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] COMMAND Quit {
+
+}
+[1601291468.036][INFO]: [4ca425410053ef3c2fca2a8af0143ffc] RESPONSE Quit
