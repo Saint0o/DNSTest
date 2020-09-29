@@ -1,10 +1,15 @@
 package com.dnstest.test;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.conditions.Text;
+import org.openqa.selenium.NoSuchElementException;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.sql.*;
+import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -20,6 +25,8 @@ public class MainTest {
         sortResult();
         Thread.sleep(3000);
         firstFiveResultsInDB();
+        searchTheBest();
+        Thread.sleep(10000);
     }
 
     public static void openPage() {
@@ -50,6 +57,7 @@ public class MainTest {
         $x("(//div[@class='ui-checkbox-group ui-checkbox-group_list'])[3]/label[17]/span[2]").click();              //Выбор черного цвета
         $x("//div[@data-id='f[cyg]']/a").click();                                                                   //выпадающий список количества камер
         $x("(//span[@class='ui-checkbox__box ui-checkbox__box_list'])[88]").click();                                //2
+        $x("(//span[@class='ui-checkbox__box ui-checkbox__box_list'])[88]").scrollTo();
         Thread.sleep(3000);
         $x("//button[text()='Применить']").click();                                                                 //применить
     }
@@ -66,7 +74,7 @@ public class MainTest {
     }
 
     public static void firstFiveResultsInDB() throws SQLException {
-        int uiid = getMaxUiId();
+        int uiid = getMaxUiId("uid");
         int cycles = 5;
         int resCount = $$x("//div[@class='n-catalog-product__main']").size();
 
@@ -76,10 +84,11 @@ public class MainTest {
 
         for (int i = 1; i <= cycles; i++) {
             String name = $x("(//div[@class='product-info__title-link'])[" + i + "]/a").getText();
-            double score = Double.parseDouble($x("(//div[@class='product-info__rating'])[" + i + "]").getAttribute("data-rating"));
+            double score = Double.parseDouble(Objects.requireNonNull($x("(//div[@class='product-info__rating'])[" + i + "]").getAttribute("data-rating")));
             String pricestr = $x("(//div[@class='product-min-price__current'])["+ i +"]").getText().replace(" ", "");
             int price = Integer.parseInt(pricestr.substring(0,pricestr.length()-1));
-            insertInfoInDB(uiid, name, price, score);
+            int id = getMaxUiId("id");
+            insertInfoInDB(id, uiid, name, price, score);
 
         }
     }
@@ -94,50 +103,30 @@ public class MainTest {
         return  connection;
     }
 
-    public static int getMaxUiId() throws SQLException {
+    public static int getMaxUiId(String s) throws SQLException {
 
         final Connection connection = connectToDB();
 
-        try (PreparedStatement statement = connection.prepareStatement("SELECT MAX(uid) FROM prostotablica WHERE uid = (?)")) {
-
-            statement.setInt(1, 1);
-
+        try (PreparedStatement statement = connection.prepareStatement("SELECT MAX("+ s +") FROM prostotablica")) {
             final ResultSet resultSet = statement.executeQuery();
-
             if (resultSet.next()) {
-                return Integer.parseInt(resultSet.getString(1))+1;
+                try {
+                    return Integer.parseInt(resultSet.getString(1))+1;
+                }
+                catch (NumberFormatException e){
+                    return 0;
+                }
             }
             else return 0;
-
         } finally {
             connection.close();
         }
     }
 
-    public static int getMaxId() throws SQLException {
-
-        final Connection connection = connectToDB();
-
-        try (PreparedStatement statement = connection.prepareStatement("SELECT MAX(id) FROM prostotablica WHERE id = (?)")) {
-
-            statement.setInt(1, 1);
-
-            final ResultSet resultSet = statement.executeQuery();
-
-            if (resultSet.next()) {
-                return Integer.parseInt(resultSet.getString(1))+1;
-            }
-            else return 0;
-
-        } finally {
-            connection.close();
-        }
-    }
-
-    public static void insertInfoInDB(int uiid, String name, int price, double score) throws SQLException {
+    public static void insertInfoInDB(int id, int uiid, String name, int price, double score) throws SQLException {
 
         final Connection conn = connectToDB();
-        int id = getMaxId()+1;
+
         // Employees (id, full_name, gender, hire_date)
         // ID: Auto Increase
         String sql = "Insert into prostotablica " //
@@ -160,5 +149,29 @@ public class MainTest {
 
     }
 
+    public static void searchTheBest() throws SQLException {
+        final Connection connection = connectToDB();
+        String search = null;
+        int score = 0;
+        try (PreparedStatement statement = connection.prepareStatement("SELECT name, score FROM prostotablica WHERE score = (SELECT MAX(score) FROM prostotablica) \n" +
+                "AND (uid = (SELECT MAX(uid) FROM prostotablica)) \n" +
+                "AND price = (SELECT MIN(price) FROM prostotablica \n" +
+                "\t\t\t WHERE uid = (SELECT MAX(uid) FROM prostotablica) \n" +
+                "\t\t\t AND score = (SELECT MAX(score) FROM prostotablica WHERE uid = (SELECT MAX(uid) \n" +
+                "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFROM prostotablica)))")) {
 
+            final ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                search = resultSet.getString(1);
+                score = resultSet.getInt(2);
+            }
+        } finally {
+            connection.close();
+        }
+
+        $x("(//input[@name='q'])[2]").setValue(search).pressEnter();
+        final char dm = (char) 34;
+        $x("//span[@itemprop='ratingValue']").shouldHave(Condition.text(String.valueOf(score)));
+    }
 }
