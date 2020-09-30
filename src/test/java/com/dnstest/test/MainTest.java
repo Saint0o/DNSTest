@@ -176,5 +176,6 @@ public class MainTest {
 
     public static void checkScore(String score){
         $x("//span[@itemprop='ratingValue']").shouldBe(Condition.text(score));
+        //sss
     }
 }
