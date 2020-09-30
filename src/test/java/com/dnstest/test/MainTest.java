@@ -170,8 +170,11 @@ public class MainTest {
             connection.close();
         }
         $x("(//input[@name='q'])[2]").setValue(search).pressEnter();
-        final char dm = (char) 34;
         System.out.println(score);
-        $x("//span[@itemprop='ratingValue']").shouldBe(Condition.text(String.valueOf(score)));
+        checkScore(String.valueOf(score));
+    }
+
+    public static void checkScore(String score){
+        $x("//span[@itemprop='ratingValue']").shouldBe(Condition.text(score));
     }
 }
