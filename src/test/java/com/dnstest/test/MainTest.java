@@ -152,7 +152,7 @@ public class MainTest {
     public static void searchTheBest() throws SQLException {
         final Connection connection = connectToDB();
         String search = null;
-        int score = 0;
+        double score = 0;
         try (PreparedStatement statement = connection.prepareStatement("SELECT name, score FROM prostotablica WHERE score = (SELECT MAX(score) FROM prostotablica) \n" +
                 "AND (uid = (SELECT MAX(uid) FROM prostotablica)) \n" +
                 "AND price = (SELECT MIN(price) FROM prostotablica \n" +
@@ -164,14 +164,14 @@ public class MainTest {
 
             if (resultSet.next()) {
                 search = resultSet.getString(1);
-                score = resultSet.getInt(2);
+                score = resultSet.getDouble(2);
             }
         } finally {
             connection.close();
         }
-
         $x("(//input[@name='q'])[2]").setValue(search).pressEnter();
         final char dm = (char) 34;
-        $x("//span[@itemprop='ratingValue']").shouldHave(Condition.text(String.valueOf(score)));
+        System.out.println(score);
+        $x("//span[@itemprop='ratingValue']").shouldBe(Condition.text(String.valueOf(score)));
     }
 }
