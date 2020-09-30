@@ -25,8 +25,8 @@ public class MainTest {
         sortResult();
         Thread.sleep(3000);
         firstFiveResultsInDB();
-        searchTheBest();
-        Thread.sleep(10000);
+        /*searchTheBest();
+        Thread.sleep(10000);*/
     }
 
     public static void openPage() {
@@ -153,7 +153,8 @@ public class MainTest {
         final Connection connection = connectToDB();
         String search = null;
         double score = 0;
-        try (PreparedStatement statement = connection.prepareStatement("SELECT name, score FROM prostotablica WHERE score = (SELECT MAX(score) FROM prostotablica) \n" +
+        try (PreparedStatement statement = connection.prepareStatement(
+                "SELECT name, score FROM prostotablica WHERE score = (SELECT MAX(score) FROM prostotablica) \n" +
                 "AND (uid = (SELECT MAX(uid) FROM prostotablica)) \n" +
                 "AND price = (SELECT MIN(price) FROM prostotablica \n" +
                 "\t\t\t WHERE uid = (SELECT MAX(uid) FROM prostotablica) \n" +
@@ -176,6 +177,5 @@ public class MainTest {
 
     public static void checkScore(String score){
         $x("//span[@itemprop='ratingValue']").shouldBe(Condition.text(score));
-        //sss
     }
 }
